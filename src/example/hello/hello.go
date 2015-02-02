@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	message := "Hello Go World!"
+	message1 := "hi"
+	var message2 *string = &message1
 	a, b, c := 1, false, 3
-	fmt.Println(message, a, b, c)
+	fmt.Println(message1, a, b, c, *message2)
 }
